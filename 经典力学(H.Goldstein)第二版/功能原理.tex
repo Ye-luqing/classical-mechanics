@@ -20,9 +20,9 @@
 \newenvironment{theorem}
 {\bigskip\begin{mdframed}\begin{theo}}
     {\end{theo}\end{mdframed}\bigskip}
-\newenvironment{exercise}
-{\bigskip\begin{mdframed}\begin{exe}}
-    {\end{exe}\end{mdframed}\bigskip}
+\newenvironment{remark}
+{\bigskip\begin{mdframed}\begin{rem}}
+    {\end{rem}\end{mdframed}\bigskip}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 \setCJKmainfont[BoldFont=SimHei]{SimSun}
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
@@ -78,4 +78,12 @@ $$
 \int_C\mathbf{F}\cdot d\mathbf{s}=\frac{1}{2}m(\mathbf{v}(t_2)^2-\mathbf{v}(t_1)^2).
 $$
 这就是功能原理.
+\begin{remark}
+也可以这样推导:
+\begin{align*}
+  \int_C \mathbf{F}\cdot d\mathbf{s}=m\int_{t_{1}}^{t_{2}}
+\frac{d\mathbf{v}}{dt}\cdot
+\mathbf{v}dt&=m\int_{v_1}^{v_2}\mathbf{v}\cdot d\mathbf{v}\\&=m(\frac{\mathbf{v}(t_{2})^2}{2}-\frac{\mathbf{v}(t_{1})^2}{2}).
+\end{align*}
+\end{remark}
 \end{document}
